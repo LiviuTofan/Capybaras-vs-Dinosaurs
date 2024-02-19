@@ -1,0 +1,38 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 13, in script
+    suzuki "Yamaha, the day is as perfect as your smile. How about we escape to the lake? Its waters mirror the warmth I feel whenever you're near."
+TypeError: got an unexpected keyword argument 'name'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 13, in script
+    suzuki "Yamaha, the day is as perfect as your smile. How about we escape to the lake? Its waters mirror the warmth I feel whenever you're near."
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\character.py", line 1391, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\character.py", line 1042, in do_display
+    display_say(who,
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\character.py", line 683, in display_say
+    what_text = renpy.display.screen.get_widget(what_text[0], what_text[1], what_text[2])
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\display\screen.py", line 1534, in get_displayable
+    screen.update()
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\parameter.py", line 429, in apply_arguments
+    return parameters.apply(args or (), kwargs or {}, ignore_errors)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\parameter.py", line 360, in apply
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'name'
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.2.0.24012702
+Capybaras vs Dinosaurs 1.0
+Mon Feb 19 03:34:35 2024
