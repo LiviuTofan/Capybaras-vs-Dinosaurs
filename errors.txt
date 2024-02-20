@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: expected statement.
-    bg main_menu
-                ^
+File "game/meet.rpy", line 2: expected statement.
+    black scene
+          ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Mon Feb 19 02:52:20 2024
+Tue Feb 20 11:20:40 2024
