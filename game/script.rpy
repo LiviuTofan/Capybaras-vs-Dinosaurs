@@ -11,7 +11,8 @@ define roses = 0
 # ar fi de dorit de rotit ca suzuki sa priveasca inspre dreapta, tipa se uite spre yamaha, si ea spre el
 # in drept am pus sunete care ar trebui adaugate la caracter
 # de adaugat o poza unde suzuki sta cu o floare in mana, tipa i-o da lu yamaha ca loop
+
 label start:
-    #call introduction
+    call intro
     call home
     call first_meet

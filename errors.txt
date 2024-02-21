@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/meet.rpy", line 2: expected statement.
-    black scene
-          ^
+File "game/lake.rpy", line 26: end of line expected.
+    show text "You now have [roses] rose." xalign 0.5 yalign 0.5
+                                           ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Tue Feb 20 11:20:40 2024
+Wed Feb 21 09:22:22 2024

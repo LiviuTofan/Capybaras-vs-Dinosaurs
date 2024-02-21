@@ -61,7 +61,7 @@ define config.has_voice = True
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
-#define config.main_menu_music = "audio/kapibara_mp3.mp3"
+define config.main_menu_music = "audio/kapibara.mp3"
 
 
 ## Transitions #################################################################

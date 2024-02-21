@@ -1,4 +1,5 @@
-label introduction:
+label intro:
+    play music "/audio/cinema.mp3" volume 0.5
     scene black
     with dissolve
 
@@ -7,7 +8,7 @@ label introduction:
 
 
     scene black
-    centered "{cps=15}{b}Above the ground, the earth was inhabited by capybaras, while beneath the surface, dinosaurs roamed. They were peacefully coexisting without ever crossing paths and knowing about the existence of each other.{/b}{/cps}{w=0.5}{nw}"
+    centered "{cps=15}{b}Above the ground, the earth was inhabited by capybaras, while bellow it, dinosaurs roamed. They were peacefully coexisting, without knowing about the existence of each other.{/b}{/cps}{w=0.5}{nw}"
     with dissolve
 
     scene flat2 earth
