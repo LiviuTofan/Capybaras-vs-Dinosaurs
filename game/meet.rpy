@@ -21,7 +21,6 @@ label first_meet:
 
     menu:
         "Call Agents":
-            hide suzuki nervous
             jump suzuki_call_agent
 
         "Listen to the Dinosaur":
@@ -57,7 +56,4 @@ label discussion_suzuki_teddy:
             jump suzuki_call_agent #branch1
 
         "Trust teddy":
-            jump trustteddy
-
-label trustteddy:
-    "yes"
+            jump trust_teddy #branch2

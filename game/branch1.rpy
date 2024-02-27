@@ -33,7 +33,7 @@ label suzuki_call_agent:
     suzuki "That was the dinosaur that caught Yamaha. We have to find him."
     agent "The choice is yours."
 
-    if agencyReputation >= 1:
+    if agencyReputation >= 1: # aici sa fie 1
         jump suzuki_choose1
     else:
         jump suzuki_choose2
@@ -43,43 +43,46 @@ label suzuki_choose1:
     menu:
         "Continue with Capybara Agency":
             suzuki "Please, I have helped you so far, let’s grab that dinosaur, he knows where Yamaha is."
-            jump cave_end
+            jump cave_end # this branch where capybaras lost
+
+        "Ask the agency for help":
+            jump ask_agent_for_help
 
         "Go separately to find Teddy.":
-            jump da #branch3
+            jump with_teddy #branch 3
 
 
 label suzuki_choose2:
     menu:
-        "Go with the agent and abandon the pursuit.":
-            jump da #branch2
+        "Continue with Capybara Agency":
+                suzuki "Please, I have helped you so far, let’s grab that dinosaur, he knows where Yamaha is."
+                jump cave_end # this branch where capybaras lost
 
         "Go separately to find Teddy.":
-            jump da #branch3
+            jump with_teddy #branch 3
 
 
 label cave_end:
     scene black
-    "{cps=20}They follow the path until they find themselves inside a large room with a big door."
+    centered "{cps=20}They follow the path until they find themselves inside a large room with a big door.{/cps}{w=0.5}{nw}"
     scene cave door
     #zvuk de fbi open the door
-    pause 2.0
-    scene black
-    "{cps=20}The other agents follow from behind. They breach the door and find the dinosaur king."
+    pause 1.5
+    "{cps=20}The other agents follow from behind. They breach the door and find the dinosaur boss.{/cps}{w=0.5}{nw}"
     
     scene cave boss
+    pause 1.5
     show agent2 capy at right
     agent "Keep your hands raised! It’s over! "
     show boss2 nervous at left
     boss "And what if I do not?"
     
     scene cave boss2
-    show agent2 capy at right
-    agent "We’ll shoot you dead, there is enough witness against you! Yow will not escape! "
-    show boss2 nervous at left
+    agent "We will shoot you dead, there is enough witness against you! Yow will not escape! "
     boss "Do as you wish. It is my fault that I have trusted that brainless lizards do the important work. I have to pay for my mistakes now. I will not even try to resist."
-    agent "Perfectly, so you’re coming with us! Put the cuffs on him, guys."
+    agent "Perfectly, so you are coming with us! Put the cuffs on him, guys."
     "The capybara agents approach to cuff Rex, with multiple guns pointed at him. In that same moment, a swarm of pterodactyls and dinosaurs ambush the capybara agents as if following a secret order from their King."
+    with Shake((0, 0, 0, 0), 2.0, dist=30)
     scene cave boss3
     pause 2.0
     "Suzuki rushes to the exit, in an attempt to find Yamaha and gather allies."
@@ -90,23 +93,24 @@ label cave_end:
     suzuki "That dinosaur must have been here, the path is still marked by his blood. I have to find him. "
     "Suzuki’s resolve is getting stronger as he heads on the path that the wounded dinosaur left."
     scene black
-    "{cps=20}But he didn't expact that...{/cps}{w=0.5}{nw}"
+    centered "{cps=20}But he didn't expact that...{/cps}{w=0.5}{nw}"
 
     scene caged capybaras
-    pause 1.5
+    pause 2.0
     "Suzuki sees his beloved Yamaha dead in a cage, with Teddy lying on the floor, full of wounds, with keys to the cage in his hands, as if he wanted to free Yamaha to prove his intentions to Suzuki."
     show suzuki sad at left
     suzuki "How? Why? Where have I failed? It all was for nothing. Yamaha, the agents, even this dinosaur were killed. What remains for me?"
 
     scene black
-    "{cps=20}With these words, a dinosaur strikes behind Suzuki, leaving him dead next to Yamaha’s body."
+    centered "{cps=20}With these words, a dinosaur strikes behind Suzuki, leaving him dead next to Yamaha’s body."
     scene dead
+    pause 2.5
     suzuki "At least we are together. See you soon, Yamaha."
     "These were his last words as the image in front of him started to fade away."
 
     scene black
-    "{cps=20}That day, the dinosaur king got rid of the capybara agency, that was his biggest threat, allowing him an attack over the capybara town. Soon, they invaded the whole world, bringing destruction and desolation to everything.{/cps}{w=0.5}{nw}"
-    scene dinsaurs power
-    pause 1.5
+    centered "{cps=20}That day, the dinosaur king got rid of the capybara agency, that was his biggest threat, allowing him an attack over the capybara town. Soon, they invaded the whole world, bringing destruction and desolation to everything.{/cps}{w=0.5}{nw}"
+    scene dinosaurs power
+    pause 2.0
     scene black
-    centered "{cps=20}Finita La Commedia{/cps}"
+    centered "{cps=20}Finita La Commedia...{/cps}"
