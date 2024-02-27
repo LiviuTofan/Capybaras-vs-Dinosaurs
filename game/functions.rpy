@@ -57,9 +57,39 @@ init:
 
 # Phone Calling
 image phoneCall:
-    "phone1 suzuki" with Dissolve(0.1)
+    "suzuki phone1" with Dissolve(0.1)
     pause 0.1
-    "phone2 suzuki" with Dissolve(0.1)
+    "suzuki phone2" with Dissolve(0.1)
     pause 0.1
     repeat
-    
+
+# Give flower to Yamaha loop
+label give_flower:
+    $ flowers += 1
+    stop music fadeout 1.0
+    menu:
+        "Give a {color=#A94064}Rose{/color}":
+            show text "{i}{color=#A94064}You now have [flowers] flowers.{/color}{/i}" at top
+            play music "/audio/romantic.mp3"
+            $ love += 1
+            show suzuki rose at left
+            with dissolve
+            suzuki "Yamaha, this rose is for you, a delicate echo of the beauty you bring into my world."
+            show yamaha shy at right
+            with dissolve
+            yamaha "Suzuki, your words and this beautiful flower create a symphony of warmth in my heart."
+            stop music fadeout 1.0
+            hide suzuki rose
+
+        "Give a {color=#FFDF00}Tulip{/color}":
+            show text "{i}{color=#A94064}You now have [flowers] flowers.{/color}{/i}" at top
+            play music "/audio/broken.mp3" volume 0.5
+            $ love -= 1
+            show suzuki tulip at left
+            with dissolve
+            suzuki "Yamaha, this tulip is for you, a delicate echo of the beauty you bring into my world."
+            show yamaha nervous at right
+            with dissolve
+            yamaha "Suzuki, you disappointed me, how could you forget that I'm allergic to tulips?..."
+            stop music fadeout 1.0
+            hide tulip suzuki

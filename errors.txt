@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/lake.rpy", line 26: end of line expected.
-    show text "You now have [roses] rose." xalign 0.5 yalign 0.5
-                                           ^
+The label cave is defined twice, at File "game/branch1.rpy", line 61:
+label cave:
+and File "game/lake.rpy", line 26:
+label cave:
+
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Wed Feb 21 09:22:22 2024
+Tue Feb 27 02:22:26 2024

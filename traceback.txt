@@ -1,28 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\liviu\\AppData\\Roaming/RenPy/CapybarasvsDinosaurs-1708302084\\persistent'
+  File "game/script.rpy", line 14, in script call
+    call home
+  File "game/lake.rpy", line 81, in script call
+    call call_or_steps
+  File "game/lake.rpy", line 103, in script call
+    call zvanok
+  File "game/agency.rpy", line 26, in script
+    agenct "You have no other option"
+Exception: Sayer 'agenct' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\main.py", line 649, in main
-    renpy.persistent.update(True)
-  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\persistent.py", line 434, in update
-    save()
-  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\persistent.py", line 455, in save
-    renpy.loadsave.location.save_persistent(compressed)
-  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\savelocation.py", line 566, in save_persistent
-    l.save_persistent(data)
-  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\savelocation.py", line 378, in save_persistent
-    safe_rename(fn_new, fn)
-  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\loadsave.py", line 303, in safe_rename
-    os.unlink(new)
-PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\liviu\\AppData\\Roaming/RenPy/CapybarasvsDinosaurs-1708302084\\persistent'
+  File "game/script.rpy", line 14, in script call
+    call home
+  File "game/lake.rpy", line 81, in script call
+    call call_or_steps
+  File "game/lake.rpy", line 103, in script call
+    call zvanok
+  File "game/agency.rpy", line 26, in script
+    agenct "You have no other option"
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\liviu\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'agenct' is not defined.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.0.24012702
 Capybaras vs Dinosaurs 1.0
-Wed Feb 21 10:01:40 2024
+Fri Feb 23 00:34:53 2024
