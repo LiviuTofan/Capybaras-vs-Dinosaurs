@@ -18,4 +18,4 @@
 
 You can enjoy this game online, on the link below (don't forget to give a feedback)
 
-[Link Text](https://liviutofan.itch.io/capybaras-vs-dinosausr)
+[Link](https://liviutofan.itch.io/capybaras-vs-dinosausr)
