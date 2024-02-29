@@ -18,5 +18,4 @@
 
 You can enjoy this game online, on the link below (don't forget to give a feedback)
 
-   ```bash
-   [git clone https://github.com/your-username/capybaras-vs-dinosaurs.git](https://liviutofan.itch.io/capybaras-vs-dinosausr)https://liviutofan.itch.io/capybaras-vs-dinosausr
+[Link Text](https://liviutofan.itch.io/capybaras-vs-dinosausr)
