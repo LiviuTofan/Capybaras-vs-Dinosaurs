@@ -1,6 +1,6 @@
 # Capybaras vs Dinosaurs
 
-![Game Cover](photo.jpg)![main_menu](https://github.com/LiviuTofan/Capybaras-vs-Dinosaurs/assets/118630260/8a2decdd-9a0a-45b9-801e-fd85d11b17ed)
+[main_menu](https://github.com/LiviuTofan/Capybaras-vs-Dinosaurs/assets/118630260/8a2decdd-9a0a-45b9-801e-fd85d11b17ed)
 
 
 ## Overview
@@ -14,9 +14,9 @@
 - **Multiple Endings:** Experience two unique endings based on your choices.
 - **Branching Narratives:** Explore four different story branches, each offering a unique path.
 
-## Installation
+## Play ONLINE
 
-1. Clone the repository to your local machine:
+You can enjoy this game online, on the link below (don't forget to give a feedback)
 
    ```bash
-   git clone https://github.com/your-username/capybaras-vs-dinosaurs.git
+   [git clone https://github.com/your-username/capybaras-vs-dinosaurs.git](https://liviutofan.itch.io/capybaras-vs-dinosausr)https://liviutofan.itch.io/capybaras-vs-dinosausr
