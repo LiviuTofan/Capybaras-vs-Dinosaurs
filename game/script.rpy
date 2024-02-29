@@ -11,6 +11,5 @@ define agencyReputation = 0
 define lookedForFootsteps = False
 
 label start:
-    #call intro
-    #call home
-    call first_meet
+    call intro
+    call home

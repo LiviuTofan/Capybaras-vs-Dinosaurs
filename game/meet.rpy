@@ -7,9 +7,12 @@ label first_meet:
     with dissolve
     suzuki "I am so sorry, Yamaha, I will find you."
 
+    play music "/audio/bush.mp3"
     "{cps=20}Suddenly, a strange sound was heard from the shades of the trees."
     show teddy2 simple at right
     with dissolve
+
+    play music "/audio/lake.mp3" volume 2
     teddy "Suzuki! I know you!"
     hide suzuki smoke
     show suzuki nervous at left

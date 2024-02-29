@@ -101,8 +101,8 @@ label cigarette1:
 label cigarette2:
         suzuki "What are these tracks? Maybe I should follow them?"
         scene black
-        "{cps=20}Suzuki follows the tracks and the tracks fade into the high grass.{/cps}{w=0.5}{nw}"
+        centered "{cps=20}Suzuki follows the tracks and the tracks fade into the high grass.{/cps}{w=0.5}{nw}"
         scene bg steps
         "{cps=20}The footsteps get into high grass and disappear, Suzuki cannot track them anymore{/cps}{w=0.5}{nw}"
         
-        call cigarette1
+        jump cigarette1

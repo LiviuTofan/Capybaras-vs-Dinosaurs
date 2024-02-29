@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/branch1.rpy", line 56: menu statement expects a non-empty block.
-    menu:
-        ^
-
-File "game/branch1.rpy", line 57: expected statement.
-    "Continue with Capybara Agency":
-                                   ^
-
-File "game/branch1.rpy", line 61: expected statement.
-    "Go separately to find Teddy.":
-                                  ^
+File "game/script.rpy", line 15: expected statement.
+    main_menu
+             ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Tue Feb 27 11:19:22 2024
+Tue Feb 27 18:05:56 2024
